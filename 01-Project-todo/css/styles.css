@@ -119,9 +119,11 @@ select{
 select{
     background: white;
     color: #ff6f47;
-    width: 10rem;
+    width: 12rem;
     cursor: pointer;
     padding: 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .select::after{
