@@ -63,7 +63,7 @@ function deleteAndCompletedToDo(e) {
                 }
             }
         }
-        localStorage.clear();
+        localStorage.removeItem('todo');
         localStorage.setItem('todo', JSON.stringify(todos));
     }
 }
