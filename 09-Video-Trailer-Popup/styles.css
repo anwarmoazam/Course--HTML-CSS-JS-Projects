@@ -42,6 +42,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    transition: opacity .7s;
+}
+
+.active{
+    visibility: hidden;
+    opacity: 0;
 }
 
 .btn{
@@ -62,12 +69,20 @@ body{
     outline: none;
 }
 
-@media (screen){
-    
+@media (max-width:991px){
+    .video-container video{
+        max-width: 90%;
+    }
 }
 
-.video-container i{
+.close-icon{
     position: absolute;
-    /* max-width: 900px;
-    outline: none; */
+    top: 30px;
+    right: 30px;
+    color: blue;
+    cursor: pointer;
+}
+
+.close-icon:hover{
+    color: red;
 }
