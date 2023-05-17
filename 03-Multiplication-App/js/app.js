@@ -3,18 +3,18 @@ const buttonDOM = document.querySelector('.btn');
 const scoreDOM = document.getElementById('score');
 const answerDOM = document.getElementById('answer');
 
-
+// let score = 0;
 let num1 = Math.ceil(Math.random()*10);
 let num2 = Math.ceil(Math.random()*10);
 questionDOM.innerText = `What is ${num1} multiply by ${num2}?`;
 let answer = num1 * num2;
 
 let score = JSON.parse(localStorage.getItem('score'));
-scoreDOM.innerText = `score : ${score}`;
 
 if(!score){
-    score =0;
+    score = 0;
 }
+scoreDOM.innerText = `score : ${score}`;
 
 buttonDOM.addEventListener('click',checkAnswer);
 
