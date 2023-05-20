@@ -30,7 +30,7 @@ function updateImg() {
     timeout = setTimeout(()=>{
         currentImg++;
         updateImg();
-    },3000)
+    },5000)
     console.log(timeout);
 }
 
